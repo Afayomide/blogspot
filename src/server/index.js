@@ -6,7 +6,7 @@ const Blog = require("./blogschema")
 const app = express();
 
 app.use(cors({
-  origin: 'https://blogspot-c5du.vercel.app', // Replace with your Vercel frontend URL
+  origin: 'https://blogspot-c5du-opk0jwky5-afayomide.vercel.app', // Replace with your Vercel frontend URL
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
