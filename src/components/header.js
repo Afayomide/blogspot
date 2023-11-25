@@ -10,13 +10,13 @@ function Header() {
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <Link class="nav-link" to="/dashboard">Home <span class="sr-only">(current)</span></Link>
+        <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="/create">Create</a>
       </li>
       <li class="nav-item">
-        <Link class="nav-link" to="/signup">Signup</Link>
+        <Link class="nav-link" to="/read"></Link>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,7 +31,6 @@ function Header() {
     </ul>
   </div>
 </nav>
-Forms
     </div>)
 }
 

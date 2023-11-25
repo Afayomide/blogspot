@@ -1,5 +1,6 @@
 // BlogList.js
 import DeleteBlog from './delete';
+import BlogForm from './create';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -27,7 +28,10 @@ const BlogList = () => {
 
 
   return (
-    <div>
+    <div>    
+      
+    <BlogForm/>
+
       <h2>Blog List</h2>
       <ul>
         {blogs.map(blog => (

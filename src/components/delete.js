@@ -20,7 +20,7 @@ const DeleteBlog = ({ blogId, onDelete }) => {
   };
 
   return (
-    <button onClick={handleDelete}><BsTrash/></button>
+    <a onClick={handleDelete}><BsTrash /></a>
   );
 };
 

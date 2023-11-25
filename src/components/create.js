@@ -22,7 +22,12 @@ const BlogForm = () => {
       })
       .catch(error => {
         console.error('Error creating blog:', error);
-      });
+      });  
+        window.location.reload()
+
+  };
+  const handlerefresh = () => {
+    // Function to update UI after blog deletion
   };
 
   return (
@@ -30,7 +35,7 @@ const BlogForm = () => {
       <h2>Create Blog</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Name:</label>
           <input
             type="text"
             id="title"
@@ -50,7 +55,7 @@ const BlogForm = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Create</button>
+        <button type="submit" >Create</button>
       </form>
     </div>
   );

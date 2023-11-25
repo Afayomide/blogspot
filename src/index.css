@@ -29,6 +29,7 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 label {
@@ -43,16 +44,18 @@ input {
   border: 1px solid #ccc;
 }
 
-button {
+form button {
+  margin:  2rem auto;
   padding: 10px 15px;
   border: none;
   border-radius: 3px;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  width: 50%;
 }
 
-button:hover {
+form button:hover {
   background-color: #0056b3;
 }
 
