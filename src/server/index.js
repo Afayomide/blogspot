@@ -24,15 +24,11 @@ app.get("/", (res,req)=>{
 })
 
 app.post('/blogs', async (req, res) => {
-  try {
     const { title, content } = req.body;
     const newBlog = new Blog({ title, content });
     await newBlog.save();
     res.status(201).json(newBlog);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server Error' });
-  }
+
 });
 
 app.get('/blogs', async (req, res) => {

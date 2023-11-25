@@ -23,7 +23,6 @@ const BlogForm = () => {
       .catch(error => {
         console.error('Error creating blog:', error);
       });  
-        window.location.reload()
 
   };
   const handlerefresh = () => {
