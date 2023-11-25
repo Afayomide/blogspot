@@ -15,7 +15,9 @@ mongoose.connect('mongodb+srv://daraseyi086:daraseyi086@customer.ovxpbot.mongodb
 
 
 
-
+app.get("/", (res,req)=>{
+  res.send("hello")
+})
 
 app.post('/blogs', async (req, res) => {
   try {
