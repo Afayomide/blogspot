@@ -5,7 +5,11 @@ const Blog = require("./blogschema")
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://blogspot-c5du-opk0jwky5-afayomide.vercel.app/', // Replace with your Vercel frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+}));
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://daraseyi086:daraseyi086@customer.ovxpbot.mongodb.net/?retryWrites=true&w=majority', {
