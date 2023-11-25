@@ -18,12 +18,12 @@ const BlogForm = () => {
       .then(response => {
         console.log('Blog created:', response.data);
         // Reset form after submission
-        setFormData({ title: '', content: '' });
+        setFormData({ title: '', content: '' });      
+        window.location.reload()
       })
       .catch(error => {
         console.error('Error creating blog:', error);
       });  
-
   };
   const handlerefresh = () => {
     // Function to update UI after blog deletion
