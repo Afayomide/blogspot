@@ -14,7 +14,7 @@ const BlogForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     // Create a new blog post
-    axios.post('http://localhost:3001/blogs', formData)
+    axios.post('https://blogspot-phi.vercel.app/blogs', formData)
       .then(response => {
         console.log('Blog created:', response.data);
         // Reset form after submission

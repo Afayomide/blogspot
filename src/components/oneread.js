@@ -10,7 +10,7 @@ const BlogDetails = () => {
 
   useEffect(() => {
     // Fetch a specific blog post by ID
-    axios.get(`http://localhost:3001/blogs/${id}`)
+    axios.get(`https://blogspot-phi.vercel.app/blogs/${id}`)
       .then(response => {
         setBlog(response.data);
       })

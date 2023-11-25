@@ -8,7 +8,7 @@ import {BsTrash} from "react-icons/bs"
 const DeleteBlog = ({ blogId, onDelete }) => {
   const handleDelete = () => {
     // Delete a specific blog post by ID
-    axios.delete(`http://localhost:3001/blogs/${blogId}`)
+    axios.delete(`https://blogspot-phi.vercel.app/blogs/${blogId}`)
       .then(response => {
         console.log('Blog deleted:', response.data);
         // Trigger the onDelete callback function to update the UI after deletion

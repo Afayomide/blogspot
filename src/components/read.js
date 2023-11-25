@@ -10,7 +10,7 @@ const BlogList = () => {
 
   useEffect(() => {
     // Fetch all blog posts
-    axios.get('http://localhost:3001/blogs')
+    axios.get('https://blogspot-phi.vercel.app/blogs')
       .then(response => {
         setBlogs(response.data);
       })
@@ -29,7 +29,7 @@ const BlogList = () => {
 
   return (
     <div>    
-      
+
     <BlogForm/>
 
       <h2>Blog List</h2>
