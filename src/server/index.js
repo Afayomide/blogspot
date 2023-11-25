@@ -19,7 +19,7 @@ mongoose.connect('mongodb+srv://daraseyi086:daraseyi086@customer.ovxpbot.mongodb
 
 
 
-app.get("/", (res,req)=>{
+app.get("/", (req,res)=>{
   res.send("hello")
 })
 
